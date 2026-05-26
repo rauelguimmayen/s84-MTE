@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+	<title>s84 App Building 2</title>
+</head>
+<body>
+	<!-- Navbar Start -->
+	<div class="container-fluid mx-auto fixed-top">
+		<nav id="mainNav" class="navbar container-fluid px-5  fixed-top navbar-expand-lg navbar-light bg-light">
+		  <div class="container-fluid">
+		    <a id="logo" class="navbar-brand" href="#">LEARN WITH AI</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		      <div class="navbar-nav ms-auto">
+		        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+		        <a class="nav-link" href="#introduction">Intro</a>
+		        <a class="nav-link" href="#categories">Categories</a>
+		        <a class="nav-link" href="#about">About</a>
+		        <a id="lastbutton" class="nav-link" href="#contact">Contact Us</a>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+	<!-- Navbar End -->
+	<!-- Home Page Start -->
+	<div id="home" class="container-fluid d-flex flex-column align-items-center justify-content-center py-5">
+		<h1>LEARN TO BE THE BEST,</h1>
+		<h1>ON WHAT YOU LOVE TO DO.</h1>
+		<div class="container-fluid d-flex flex-column align-items-center justify-content-center py-5 w-50 text-center">
+		<p>Learn With AI pairs you with AI-guided challenges, real feedback, and modern certificates to accelerate your growth.</p>
+		<button type="button" class="btn btn-primary"><a id="learn" href="#courses">Start Learning</a></button>
+		</div>
+		<div id="introduction" class="container-fluid d-flex flex-column align-items-center justify-content-center py-5">
+		<h2>Choose from Multiple Carsh Course</h2>
+		</div>
+		<div class="stats-wrapper">
+		  <div class="glass-card">
+		    <h2>20+</h2>
+		    <p>Crash Courses</p>
+		  </div>
+		  <div class="glass-card">
+		    <h2>50K+</h2>
+		    <p>Active Learners</p>
+		  </div>
+		  <div class="glass-card">
+		    <h2>95%</h2>
+		    <p>Success Rate</p>
+		  </div>
+		</div>
+	</div>
+
+<section id="categories" class="menu-section">
+  <div class="menu-header">
+    <div>
+      <h2 class="menu-title">Find Your Next Crash Course</h2>
+      <p class="menu-sub">Choose a path and level up faster</p>
+    </div>
+    <button class="btn-viewall">View all</button>
+  </div>
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="setActive(this)">All</button>
+    <button class="filter-btn" onclick="setActive(this)">Creative</button>
+    <button class="filter-btn" onclick="setActive(this)">Business</button>
+    <button class="filter-btn" onclick="setActive(this)">Personal</button>
+    <button class="filter-btn" onclick="setActive(this)">Tech</button>
+    <button class="filter-btn" onclick="setActive(this)">Health</button>
+    <button class="filter-btn" onclick="setActive(this)">Finance</button>
+    <button class="filter-btn" onclick="setActive(this)">Lifestyle</button>
+  </div>
+</section>
+
+
+
+  <section id="courses" class="container-fluid d-flex flex-column align-items-center justify-content-center py-5">
+	<div id="cardcourse" class="cards-section ">
+  <div class="cards-grid">
+    <div class="glass-card">
+      <div class="card-icon-wrap"><i class="ti ti-briefcase" aria-hidden="true"></i></div>
+      <p class="card-title">Card Title One</p>
+      <p class="card-desc">Short placeholder description goes here for this card item.</p>
+    </div>
+    <div class="glass-card">
+      <div class="card-icon-wrap"><i class="ti ti-brain" aria-hidden="true"></i></div>
+      <p class="card-title">Card Title Two</p>
+      <p class="card-desc">Short placeholder description goes here for this card item.</p>
+    </div>
+    <div class="glass-card">
+      <div class="card-icon-wrap"><i class="ti ti-messages" aria-hidden="true"></i></div>
+      <p class="card-title">Card Title Three</p>
+      <p class="card-desc">Short placeholder description goes here for this card item.</p>
+    </div>
+    <div class="glass-card">
+      <div class="card-icon-wrap"><i class="ti ti-bulb" aria-hidden="true"></i></div>
+      <p class="card-title">Card Title Four</p>
+      <p class="card-desc">Short placeholder description goes here for this card item.</p>
+    </div>
+  </div>
+  <div class="cards-grid-2">
+    <div class="glass-card">
+      <div class="card-icon-wrap"><i class="ti ti-users" aria-hidden="true"></i></div>
+      <p class="card-title">Card Title Five</p>
+      <p class="card-desc">Short placeholder description goes here for this card item.</p>
+    </div>
+    <div class="glass-card">
+      <div class="card-icon-wrap"><i class="ti ti-trending-up" aria-hidden="true"></i></div>
+      <p class="card-title">Card Title Six</p>
+      <p class="card-desc">Short placeholder description goes here for this card item.</p>
+    </div>
+    <div class="glass-card">
+      <div class="card-icon-wrap"><i class="ti ti-heart" aria-hidden="true"></i></div>
+      <p class="card-title">Card Title Seven</p>
+      <p class="card-desc">Short placeholder description goes here for this card item.</p>
+    </div>
+    <div class="glass-card">
+      <div class="card-icon-wrap"><i class="ti ti-heart" aria-hidden="true"></i></div>
+      <p class="card-title">Card Title Seven</p>
+      <p class="card-desc">Short placeholder description goes here for this card item.</p>
+    </div>
+  </div>
+</div>
+</section>
+<!-- About Start -->
+	<div id="about" class="container-fluid d-flex flex-column align-items-center justify-content-center py-5 text-center">
+
+  <span class="about-badge">
+    <i class="ti ti-sparkles"></i> About us
+  </span>
+
+  <h1 class="about-heading">
+    Learn at your own pace,<br>grow on your own terms
+  </h1>
+
+  <p class="about-sub">
+    We believe everyone has untapped potential. Our AI-powered platform adapts to how you learn best — giving you the right lessons, at the right time, so you can build real skills and move forward with confidence.
+  </p>
+
+  <div class="about-actions">
+    <button id="startlearning" class="btn-primary-custom"><a href="#introduction">Start learning free</a></button>
+    <button id="explore" class="btn-ghost"><a href="#categories">Explore courses</a></button>
+  </div>
+
+  <div class="about-stats">
+    <div class="stat-item"><span class="stat-num">50K+</span><span class="stat-label">Active learners</span></div>
+    <div class="stat-item"><span class="stat-num">20+</span><span class="stat-label">Crash courses</span></div>
+    <div class="stat-item"><span class="stat-num">95%</span><span class="stat-label">Success rate</span></div>
+    <div class="stat-item"><span class="stat-num">4.9★</span><span class="stat-label">Avg. rating</span></div>
+  </div>
+
+</div>
+<!-- About End -->
+<!-- Mission Start-->
+	<section id="mission" class="mission-section container-fluid d-flex flex-column align-items-center justify-content-center py-5 text-center">
+  <div class="mission-badge">
+    <i class="ti ti-sparkles"></i> Our mission
+  </div>
+  <h2 class="mission-heading">Empowering every learner to grow faster with the help of AI</h2>
+  <p class="mission-body">We believe that access to great education should not depend on where you were born or how much you earn. By combining human expertise with AI-powered guidance, we make skill-building personal, practical, and available to everyone — at any pace, on any path.</p>
+
+  <div class="pillars">
+    <div class="pillar">
+      <i class="ti ti-brain"></i>
+      <h3>Personalized learning</h3>
+      <p>AI adapts to your pace, style, and goals so every lesson feels built just for you.</p>
+    </div>
+    <div class="pillar">
+      <i class="ti ti-rocket"></i>
+      <h3>Faster progress</h3>
+      <p>Smart feedback and practice loops help you retain more and move forward with confidence.</p>
+    </div>
+    <div class="pillar">
+      <i class="ti ti-world"></i>
+      <h3>Accessible to all</h3>
+      <p>No prerequisites, no gatekeeping. Just real skills for real people, wherever they are.</p>
+    </div>
+    <div class="pillar">
+      <i class="ti ti-trophy"></i>
+      <h3>Outcome-focused</h3>
+      <p>Every course is designed around what you can do after — not just what you know.</p>
+    </div>
+  </div>
+
+  <blockquote>
+    "The goal is not to replace the human desire to learn — it is to remove every barrier that stands between a person and their potential."
+  </blockquote>
+</section>
+<!-- Mission End -->
+
+	<section id="contact" class="contact-section py-5">
+	  <div class="container">
+	    <div class="contact-grid">
+
+	      <!-- Left: Info -->
+	      <div class="contact-left">
+	        <span class="contact-badge"><i class="ti ti-mail"></i> Contact us</span>
+	        <h2 class="contact-heading">We'd love to hear from you</h2>
+	        <p class="contact-sub">Have a question, feedback, or just want to say hello? Fill out the form and our team will get back to you within 24 hours.</p>
+	        <div class="info-list">
+	          <div class="info-item">
+	            <div class="info-icon"><i class="ti ti-mail"></i></div>
+	            <div><p class="info-label">Email</p><p class="info-value">hello@learnwithai.com</p></div>
+	          </div>
+	          <div class="info-item">
+	            <div class="info-icon"><i class="ti ti-phone"></i></div>
+	            <div><p class="info-label">Phone</p><p class="info-value">+63 (123) 456-7890</p></div>
+	          </div>
+	          <div class="info-item">
+	            <div class="info-icon"><i class="ti ti-map-pin"></i></div>
+	            <div><p class="info-label">Location</p><p class="info-value">Philippines</p></div>
+	          </div>
+	        </div>
+	      </div>
+
+	      <!-- Right: Form -->
+	      <div class="form-card">
+	        <div class="form-row">
+	          <div class="form-group">
+	            <label>First name</label>
+	            <input type="text" placeholder="Juan">
+	          </div>
+	          <div class="form-group">
+	            <label>Last name</label>
+	            <input type="text" placeholder="Dela Cruz">
+	          </div>
+	        </div>
+	        <div class="form-group">
+	          <label>Email address</label>
+	          <input type="email" placeholder="you@example.com">
+	        </div>
+	        <div class="form-group">
+	          <label>Subject</label>
+	          <select>
+	            <option disabled selected>Select a topic</option>
+	            <option>General inquiry</option>
+	            <option>Course support</option>
+	            <option>Billing</option>
+	          </select>
+	        </div>
+	        <div class="form-group">
+	          <label>Message</label>
+	          <textarea placeholder="Write your message here..."></textarea>
+	        </div>
+	        <button class="btn-send"><i class="ti ti-send"></i> Send message</button>
+	      </div>
+
+	    </div>
+	  </div>
+	</section>
+	<!-- Footer -->
+	<footer class="site-footer">
+	  <div class="container">
+	    <div class="footer-top">
+
+	      <!-- Brand -->
+	      <div>
+	        <a href="#" class="footer-brand-logo">
+	          <div class="logo-mark"><i class="ti ti-hexagon"></i></div>
+	          <span class="logo-text">Learn With AI</span>
+	        </a>
+	        <p class="footer-tagline">AI-powered learning for everyone. Build real skills at your own pace, on your own terms.</p>
+	        <div class="social-row">
+	          <a href="#" class="social-btn"><i class="ti ti-brand-twitter"></i></a>
+	          <a href="#" class="social-btn"><i class="ti ti-brand-instagram"></i></a>
+	          <a href="#" class="social-btn"><i class="ti ti-brand-linkedin"></i></a>
+	          <a href="#" class="social-btn"><i class="ti ti-brand-youtube"></i></a>
+	        </div>
+	      </div>
+
+	      <!-- Platform -->
+	      <div>
+	        <p class="footer-col-title">Platform</p>
+	        <ul class="footer-links">
+	          <li><a href="#introduction">Courses</a></li>
+	          <li><a href="#courses">Crash courses</a></li>
+	          <li><a href="#categories">Categories</a></li>
+	        </ul>
+	      </div>
+
+	      <!-- Company -->
+	      <div>
+	        <p class="footer-col-title">Company</p>
+	        <ul class="footer-links">
+	          <li><a href="#about">About us</a></li>
+	          <li><a href="#">Press</a></li>
+	          <li><a href="#contact">Contact</a></li>
+	        </ul>
+	      </div>
+
+	      <!-- Newsletter -->
+	      <div>
+	        <p class="footer-col-title">Stay updated</p>
+	        <p class="footer-tagline">Get new courses and learning tips in your inbox.</p>
+	        <div class="newsletter-row">
+	          <input type="email" class="newsletter-input" placeholder="your@email.com">
+	          <button class="newsletter-btn">Subscribe</button>
+	        </div>
+	        <p class="newsletter-label">No spam, unsubscribe anytime.</p>
+	      </div>
+
+	    </div>
+
+	    <div class="footer-bottom">
+	      <p class="footer-copy">© 2026 Learn With AI. All rights reserved.</p>
+	      <div class="footer-legal">
+	        <a href="#">Privacy policy</a>
+	        <a href="#">Terms of service</a>
+	        <a href="#">Cookie settings</a>
+	      </div>
+	    </div>
+	  </div>
+	</footer>
+	<!-- Footer End -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
