@@ -377,3 +377,31 @@ blockquote {
 .footer-legal { display: flex; gap: 16px; }
 .footer-legal a { font-size: 12.5px; color: rgba(255,255,255,0.3); text-decoration: none; }
 .footer-legal a:hover { color: rgba(255,255,255,0.6); }
+.res-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 1.75rem; flex-wrap: wrap; gap: 1rem; }
+.res-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; color: #a78bfa; background: rgba(167,139,250,0.12); border: 0.5px solid rgba(167,139,250,0.25); border-radius: 20px; padding: 4px 14px; margin-bottom: 0.75rem; }
+.res-title { font-size: 22px; font-weight: 700; color: #fff; margin: 0; }
+.res-sub { font-size: 13.5px; color: rgba(255,255,255,0.45); margin: 6px 0 0; }
+
+.res-featured { display: grid; grid-template-columns: 1.6fr 1fr; gap: 14px; margin-bottom: 14px; }
+.res-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+@media (max-width: 768px) {
+  .res-featured, .res-grid { grid-template-columns: 1fr; }
+}
+
+.res-card { background: rgba(255,255,255,0.04); border: 0.5px solid rgba(255,255,255,0.1); border-radius: 14px; overflow: hidden; transition: border-color 0.15s; }
+.res-card:hover { border-color: rgba(255,255,255,0.22); }
+
+.res-thumb { width: 100%; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; font-size: 32px; color: rgba(255,255,255,0.6); }
+.purple { background: #3730a3; }
+.teal   { background: #0f6e56; }
+.coral  { background: #993c1d; }
+.pink   { background: #993556; }
+.amber  { background: #854f0b; }
+
+.res-body { padding: 1rem; }
+.res-tag { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 500; color: #a78bfa; background: rgba(167,139,250,0.12); border-radius: 12px; padding: 2px 10px; margin-bottom: 8px; }
+.res-card-title { font-size: 14px; font-weight: 600; color: #fff; margin: 0 0 6px; line-height: 1.4; }
+.res-card-desc { font-size: 12.5px; color: rgba(255,255,255,0.45); margin: 0 0 12px; line-height: 1.6; }
+.res-meta { display: flex; gap: 12px; }
+.res-meta span { font-size: 11.5px; color: rgba(255,255,255,0.3); display: flex; align-items: center; gap: 4px; }

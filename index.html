@@ -67,7 +67,7 @@
     </div>
     <button class="btn-viewall">View all</button>
   </div>
-  <div class="filter-bar">
+  <div id="category-section" class="filter-bar">
     <button class="filter-btn active" onclick="setActive(this)">All</button>
     <button class="filter-btn" onclick="setActive(this)">Creative</button>
     <button class="filter-btn" onclick="setActive(this)">Business</button>
@@ -81,7 +81,7 @@
 
 
 
-  <section id="courses" class="container-fluid d-flex flex-column align-items-center justify-content-center py-5">
+  <section id="featrured" class="container-fluid d-flex flex-column align-items-center justify-content-center py-5">
 	<div id="cardcourse" class="cards-section ">
   <div class="cards-grid">
     <div class="glass-card">
@@ -195,6 +195,61 @@
 </section>
 <!-- Mission End -->
 
+<!-- Resoureces Secion -->
+<section id="resources" class="resources-section py-5">
+  <div class="container">
+
+    <div class="res-header">
+      <div>
+        <span class="res-badge"><i class="ti ti-book"></i> Resources</span>
+        <h2 class="res-title">Learn beyond the course</h2>
+        <p class="res-sub">Guides, tips, and insights to help you grow faster.</p>
+      </div>
+      <button class="btn-viewall">View all articles</button>
+    </div>
+
+    <!-- Featured row -->
+    <div class="res-featured">
+      <div class="res-card">
+        <div class="res-thumb purple"><i class="ti ti-brain"></i></div>
+        <div class="res-body">
+          <span class="res-tag"><i class="ti ti-star"></i> Featured</span>
+          <p class="res-card-title featured-title">How AI is changing the way we learn new skills in 2026</p>
+          <p class="res-card-desc">From adaptive curriculums to real-time feedback, AI is reshaping education at every level.</p>
+          <div class="res-meta">
+            <span><i class="ti ti-clock"></i> 6 min read</span>
+            <span><i class="ti ti-calendar"></i> May 2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="res-card">
+        <div class="res-thumb teal"><i class="ti ti-chart-line"></i></div>
+        <div class="res-body">
+          <span class="res-tag"><i class="ti ti-trending-up"></i> Growth</span>
+          <p class="res-card-title">5 habits of highly effective self-learners</p>
+          <p class="res-card-desc">Small daily actions that compound into massive skill gains over time.</p>
+          <div class="res-meta"><span><i class="ti ti-clock"></i> 4 min read</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3-col row -->
+    <div class="res-grid">
+      <div class="res-card">
+        <div class="res-thumb coral"><i class="ti ti-briefcase"></i></div>
+        <div class="res-body">
+          <span class="res-tag"><i class="ti ti-briefcase"></i> Career</span>
+          <p class="res-card-title">Top 10 skills employers want in 2026</p>
+          <p class="res-card-desc">Stay ahead of the curve with the skills that matter most right now.</p>
+          <div class="res-meta"><span><i class="ti ti-clock"></i> 5 min read</span></div>
+        </div>
+      </div>
+      <!-- repeat for other cards -->
+    </div>
+
+  </div>
+</section>
+<!-- Resoureces Section end -->
 	<section id="contact" class="contact-section py-5">
 	  <div class="container">
 	    <div class="contact-grid">
@@ -280,8 +335,9 @@
 	        <p class="footer-col-title">Platform</p>
 	        <ul class="footer-links">
 	          <li><a href="#introduction">Courses</a></li>
-	          <li><a href="#courses">Crash courses</a></li>
+	          <li><a href="#featrured">Crash courses</a></li>
 	          <li><a href="#categories">Categories</a></li>
+	          <li><a href="#resources">Resources</a></li>
 	        </ul>
 	      </div>
 
